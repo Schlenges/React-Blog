@@ -10,7 +10,7 @@ const NavItem = ({name, isActive, onClick, onSelect}) => {
 }
 
 const Navbar = ({setTag}) => {
-  const tags = ["home", "coding", "health", "books"]
+  const tags = ["home", "coding", "nutrition", "mental health"]
   const [active, setActive] = useState("home")
 
   return(
@@ -22,8 +22,6 @@ const Navbar = ({setTag}) => {
         {tags.map(tag => (
           <NavItem name={tag} key={tag} isActive={active === tag} onSelect={() => setActive(tag)} onClick={() => setTag(tag)} />
         ))}
-
-        {/* <a id="burger" href="javascript:void(0);">&#9776;</a> */}
       </div>
     </nav>
   )
