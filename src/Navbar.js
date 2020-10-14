@@ -10,13 +10,13 @@ const NavItem = ({name, isActive, onClick, onSelect}) => {
 }
 
 const Navbar = ({setTag}) => {
-  const tags = ["home", "coding", "nutrition", "mental health"]
+  const tags = ["home", /* "coding", "nutrition", "mental health" */]
   const [active, setActive] = useState("home")
 
   return(
     <nav>
       <div id="logo">
-        <p>Things I Learned Today</p>
+        <p>Strange Loops</p>
       </div>
       <div className="nav-wrap" id="nav-wrap">
         {tags.map(tag => (
